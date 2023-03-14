@@ -51,6 +51,7 @@ class Animation:
         current = time.time()
         elapsed = current - self._start
 
+        # If delay is finished, then start moving frames forward
         if elapsed > self._delay:
             self._frame += 1
             
